@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王大旺--机械设计制造及其自动化方向</title>
+    <!-- W3C验证通过版本 -->
+    <style>
+        :root {
+            --primary: #2d3e50;     /* 深蓝灰色 */
+            --secondary: #f0f4f8;   /* 浅灰背景 */
+            --text: #333;           /* 主文本色 */
+            --accent: #1a567d;      /* 强调色 */
+        }
+
+        /* 打印优化 */
+        @media print {
+            :root { 
+                --primary: #444; 
+                --secondary: #fff;
+                --text: #333;
+            }
+            body { font-size: 12pt }
+            .page-break { break-inside: avoid }
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--secondary);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .resume {
+            max-width: 210mm;       /* A4宽度 */
+            min-height: 297mm;      /* A4高度 */
+            margin: 0 auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .photo {
+            width: 36mm;           /* 一寸照片尺寸 */
+            height: 48mm;
+            float: right;
+            margin: -10px 0 15px 15px;
+            border: 1px solid #ddd;
+        }
+
+        h1, h2 {
+            color: var(--primary);
+            margin: 0 0 15px;
+        }
+
+        h2 { border-left: 4px solid var(--accent); padding-left: 12px }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        ul { padding-left: 24px }
+        li { margin-bottom: 8px }
+    </style>
+</head>
+<body>
+    <article class="resume">
+        <header>
+            <img src="F:\imgs2\微信图片_20250303164552.jpg" alt="证件照" class="photo">
+            <h1>王大旺</h1>
+            <p>📱 138-1234-5678 | 📧 1706832477@QQ.com</p>
+            <p>武汉理工大学华夏学院 机械设计制造及其自动化专业 大一学生</p>
+        </header>
+
+        <section class="grid">
+            <!-- 教育背景 -->
+            <section class="page-break">
+                <h2>教育背景</h2>
+                <ul>
+                    <li>武汉理工大学华夏学院（2023-2026） </li>
+                    <li>核心课程：机械制图、C语言程序设计、PLC技术、互换性测试、机械制造工艺基础、微积分、线性代数、日语N3</li>
+                    <li>获奖：2023-2024学年校级三等奖学金</li>
+                </ul>
+            </section>
+
+            <!-- 技能证书 -->
+            <section>
+                <h2>技术能力</h2>
+                <ul>
+                    <li>🛠 机械：CAD快捷键绘图（AutoCAD 2023）、SolidWorks基础</li>
+                    <li>💻 编程：Python爬虫开发（Scrapy框架）、JS逆向分析</li>
+                    <li>📚 学习中：ANSYS有限元分析、App逆向工程、网络安全基础</li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section>
+                <h2>项目经历</h2>
+                <article>
+                    <h3>机械零件图库管理系统（课程设计）</h3>
+                    <ul>
+                        <li>使用AutoCAD建立标准件参数化图库，实现快速调用</li>
+                        <li>开发Python脚本实现图档批量导出与分类管理</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>电商平台数据采集工具</h3>
+                    <ul>
+                        <li>基于Scrapy框架开发异步爬虫，日均获取商品数据5万条</li>
+                        <li>破解平台反爬机制，实现JS加密参数逆向解析</li>
+                        <li>愿意吃苦，获得实习经验为主</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </article>
+</body>
+</html>
